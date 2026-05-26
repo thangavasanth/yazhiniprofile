@@ -21,9 +21,9 @@
     "profileCard": {
       "photo": "images/profile.jpg",
       "achievements": [
-        { "icon": "trophy", "text": "Academic Excellence" },
-        { "icon": "star", "text": "Best Student Award" },
-        { "icon": "medal", "text": "Spelling Bee Champion" }
+        { "icon": "trophy", "text": "Singapore Astronomy Olympiad – Bronze Award" },
+        { "icon": "star", "text": "Hall of Fame Recognition" },
+        { "icon": "medal", "text": "Vice President – Environment Club" }
       ],
       "highlights": {
         "leadership": ["School Prefect", "Team Captain", "Event Organizer"],
