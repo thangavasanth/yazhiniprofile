@@ -1,0 +1,232 @@
+{
+  "site": {
+    "title": "Yazhini Vasanth | Portfolio",
+    "favicon": "images/favicon.png",
+    "theme": "dark"
+  },
+  "menu": [
+    { "label": "Home", "href": "#home" },
+    { "label": "Timeline", "href": "#timeline" },
+    { "label": "Gallery", "href": "#gallery" },
+    { "label": "Videos", "href": "#videos" }
+  ],
+  "hero": {
+    "subtitle": "Welcome to My World",
+    "name": "Yazhini Vasanth",
+    "description": "A passionate and curious student with a love for learning, leadership, and creativity. From STEM explorations to cultural celebrations, every step of my journey reflects dedication, perseverance, and the joy of discovery.",
+    "buttons": [
+      { "text": "View Journey", "href": "#timeline", "style": "primary" },
+      { "text": "Explore Gallery", "href": "#gallery", "style": "secondary" }
+    ],
+    "profileCard": {
+      "photo": "images/profile.jpg",
+      "achievements": [
+        { "icon": "trophy", "text": "Academic Excellence" },
+        { "icon": "star", "text": "Best Student Award" },
+        { "icon": "medal", "text": "Spelling Bee Champion" }
+      ],
+      "highlights": {
+        "leadership": ["School Prefect", "Team Captain", "Event Organizer"],
+        "stem": ["Science Fair Winner", "Math Olympiad", "Robotics Club"]
+      }
+    }
+  },
+  "timeline": {
+    "sectionTitle": "My Journey",
+    "sectionSubtitle": "A timeline of milestones, achievements, and memorable moments",
+    "events": [
+      {
+        "year": "2025",
+        "month": "March",
+        "title": "School Prefect Appointed",
+        "highlight": "Leadership",
+        "description": "Selected as School Prefect for demonstrating outstanding leadership qualities, discipline, and commitment to the school community.",
+        "image": "images/timeline/prefect.jpg"
+      },
+      {
+        "year": "2024",
+        "month": "November",
+        "title": "Science Fair Gold Medal",
+        "highlight": "STEM",
+        "description": "Won the gold medal at the inter-school science fair with an innovative project on renewable energy solutions for rural communities.",
+        "image": "images/timeline/science-fair.jpg"
+      },
+      {
+        "year": "2024",
+        "month": "August",
+        "title": "Spelling Bee Champion",
+        "highlight": "Achievement",
+        "description": "Secured first place in the regional Spelling Bee competition, competing against over 200 participants from across the district.",
+        "image": "images/timeline/spelling-bee.jpg"
+      },
+      {
+        "year": "2024",
+        "month": "February",
+        "title": "Taekwondo Yellow Belt",
+        "highlight": "Sports",
+        "description": "Earned the Yellow Belt in Taekwondo after months of rigorous training, showcasing discipline, focus, and physical fitness.",
+        "image": "images/timeline/taekwondo.jpg"
+      },
+      {
+        "year": "2023",
+        "month": "December",
+        "title": "Annual Day Lead Performer",
+        "highlight": "Cultural",
+        "description": "Led the cultural performance at the school's Annual Day celebration, choreographing and performing a traditional dance piece.",
+        "image": "images/timeline/annual-day.jpg"
+      },
+      {
+        "year": "2023",
+        "month": "July",
+        "title": "Math Olympiad Finalist",
+        "highlight": "STEM",
+        "description": "Qualified as a finalist in the State-level Math Olympiad, demonstrating exceptional problem-solving and analytical thinking skills.",
+        "image": "images/timeline/math-olympiad.jpg"
+      },
+      {
+        "year": "2023",
+        "month": "January",
+        "title": "Robotics Workshop Certificate",
+        "highlight": "STEM",
+        "description": "Completed an advanced robotics workshop, building and programming a line-following robot using Arduino and sensors.",
+        "image": "images/timeline/robotics.jpg"
+      },
+      {
+        "year": "2022",
+        "month": "October",
+        "title": "Best Student Award",
+        "highlight": "Achievement",
+        "description": "Received the prestigious Best Student Award for overall academic excellence, extracurricular participation, and exemplary conduct.",
+        "image": "images/timeline/best-student.jpg"
+      },
+      {
+        "year": "2022",
+        "month": "March",
+        "title": "Art Competition Winner",
+        "highlight": "Creative",
+        "description": "Won first prize in the inter-school art competition with a painting themed on environmental conservation and sustainability.",
+        "image": "images/timeline/art-competition.jpg"
+      },
+      {
+        "year": "2021",
+        "title": "Started School Journey",
+        "highlight": "Milestone",
+        "description": "Began a new chapter of learning and growth, stepping into a world of endless possibilities, friendships, and discoveries.",
+        "image": "images/timeline/school-start.jpg"
+      }
+    ]
+  },
+  "gallery": {
+    "sectionTitle": "Photo Gallery",
+    "sectionSubtitle": "Capturing moments that tell my story",
+    "categories": [
+      {
+        "title": "Traditional & Cultural",
+        "description": "Celebrating heritage through dance, music, and cultural festivities",
+        "photos": [
+          { "image": "images/gallery/traditional-1.jpg", "title": "Classical Dance Performance", "description": "Performing Bharatanatyam at the school cultural fest" },
+          { "image": "images/gallery/traditional-2.jpg", "title": "Pongal Celebration", "description": "Celebrating the harvest festival with traditional attire" },
+          { "image": "images/gallery/traditional-3.jpg", "title": "Diwali Festivities", "description": "Lighting diyas and spreading joy during Diwali celebrations" }
+        ]
+      },
+      {
+        "title": "Awards & Achievements",
+        "description": "Proud moments of recognition and accomplishment",
+        "photos": [
+          { "image": "images/gallery/award-1.jpg", "title": "Gold Medal Ceremony", "description": "Receiving the gold medal at the science fair" },
+          { "image": "images/gallery/award-2.jpg", "title": "Best Student Trophy", "description": "Honored with the Best Student Award" },
+          { "image": "images/gallery/award-3.jpg", "title": "Certificate of Excellence", "description": "Academic excellence recognition ceremony" }
+        ]
+      },
+      {
+        "title": "STEM & Science",
+        "description": "Exploring the wonders of science, technology, and innovation",
+        "photos": [
+          { "image": "images/gallery/stem-1.jpg", "title": "Science Project", "description": "Working on the renewable energy project" },
+          { "image": "images/gallery/stem-2.jpg", "title": "Robotics Lab", "description": "Building robots at the workshop" },
+          { "image": "images/gallery/stem-3.jpg", "title": "Math Competition", "description": "At the Math Olympiad venue" }
+        ]
+      },
+      {
+        "title": "School Activities",
+        "description": "Learning beyond the classroom through diverse activities",
+        "photos": [
+          { "image": "images/gallery/school-1.jpg", "title": "Sports Day", "description": "Participating in the annual sports meet" },
+          { "image": "images/gallery/school-2.jpg", "title": "Library Time", "description": "Exploring new worlds through books" },
+          { "image": "images/gallery/school-3.jpg", "title": "Field Trip", "description": "Educational visit to the science museum" }
+        ]
+      },
+      {
+        "title": "Taekwondo Journey",
+        "description": "Discipline, strength, and the path of martial arts",
+        "photos": [
+          { "image": "images/gallery/taekwondo-1.jpg", "title": "Training Session", "description": "Practicing kicks at the dojo" },
+          { "image": "images/gallery/taekwondo-2.jpg", "title": "Belt Ceremony", "description": "Receiving the Yellow Belt" },
+          { "image": "images/gallery/taekwondo-3.jpg", "title": "Sparring Match", "description": "Competing in a friendly sparring match" }
+        ]
+      },
+      {
+        "title": "Childhood Memories",
+        "description": "Precious moments from the early years of wonder and joy",
+        "photos": [
+          { "image": "images/gallery/childhood-1.jpg", "title": "First Day at School", "description": "The beginning of an amazing journey" },
+          { "image": "images/gallery/childhood-2.jpg", "title": "Birthday Celebration", "description": "Celebrating with family and friends" },
+          { "image": "images/gallery/childhood-3.jpg", "title": "Garden Adventures", "description": "Exploring nature and the great outdoors" }
+        ]
+      },
+      {
+        "title": "Leadership & Participation",
+        "description": "Leading by example and participating with enthusiasm",
+        "photos": [
+          { "image": "images/gallery/leadership-1.jpg", "title": "Morning Assembly", "description": "Leading the school morning assembly" },
+          { "image": "images/gallery/leadership-2.jpg", "title": "Team Project", "description": "Collaborating with teammates on a group project" },
+          { "image": "images/gallery/leadership-3.jpg", "title": "Community Service", "description": "Volunteering for a community cleanup drive" }
+        ]
+      },
+      {
+        "title": "Friends & Events",
+        "description": "Cherished moments with friends and at special events",
+        "photos": [
+          { "image": "images/gallery/friends-1.jpg", "title": "Friendship Day", "description": "Celebrating with best friends" },
+          { "image": "images/gallery/friends-2.jpg", "title": "School Picnic", "description": "Fun times at the annual school picnic" },
+          { "image": "images/gallery/friends-3.jpg", "title": "Farewell Party", "description": "Memorable farewell celebration" }
+        ]
+      }
+    ]
+  },
+  "videos": {
+    "sectionTitle": "Video Highlights",
+    "sectionSubtitle": "Watch the moments that brought my journey to life",
+    "items": [
+      {
+        "title": "Classical Dance Performance",
+        "description": "Bharatanatyam performance at the school Annual Day celebration",
+        "video": "videos/dance-performance.mp4",
+        "thumbnail": "images/video-thumbs/dance.jpg"
+      },
+      {
+        "title": "Science Fair Presentation",
+        "description": "Presenting the renewable energy project at the inter-school science fair",
+        "video": "videos/science-fair.mp4",
+        "thumbnail": "images/video-thumbs/science.jpg"
+      },
+      {
+        "title": "Taekwondo Grading",
+        "description": "Yellow Belt grading ceremony and demonstration",
+        "video": "videos/taekwondo-grading.mp4",
+        "thumbnail": "images/video-thumbs/taekwondo.jpg"
+      },
+      {
+        "title": "School Day Highlights",
+        "description": "A compilation of memorable moments from the school year",
+        "video": "videos/school-highlights.mp4",
+        "thumbnail": "images/video-thumbs/school.jpg"
+      }
+    ]
+  },
+  "footer": {
+    "name": "Yazhini Vasanth",
+    "tagline": "Dream. Learn. Achieve. Inspire.",
+    "copyright": "Yazhini Vasanth. All rights reserved."
+  }
+}
