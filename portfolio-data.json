@@ -69,11 +69,12 @@
       },
       {
         "year": "2024",
-        "month": "February",
-        "title": "Taekwondo Yellow Belt",
-        "highlight": "Sports",
-        "description": "Earned the Yellow Belt in Taekwondo after months of rigorous training, showcasing discipline, focus, and physical fitness.",
-        "image": "images/timeline/taekwondo.jpg"
+        "month": "August",
+        "title": "Bow Seat: Ocean Awareness Contest",
+        "highlight": "Creative",
+        "description": "Received the Special Mention Award and cash recognition in the Ocean Awareness Contest for producing an impactful short film focused on ocean conservation, marine sustainability, and environmental awareness. The project demonstrated creativity, storytelling, and strong advocacy for protecting marine ecosystems.",
+        "video": "videos/OceanAwarenessContest.mp4",
+        "thumbnail": "images/video-thumbs/OceanAwarenessContest.jpg"
       },
       {
         "year": "2023",
@@ -112,8 +113,9 @@
         "month": "March",
         "title": "Art Competition Winner",
         "highlight": "Creative",
-        "description": "Won first prize in the inter-school art competition with a painting themed on environmental conservation and sustainability.",
-        "image": "images/timeline/art-competition.jpg"
+        "description": "Received the Special Mention Award and cash recognition in the Ocean Awareness Contest for producing an impactful short film focused on ocean conservation, marine sustainability, and environmental awareness. The project demonstrated creativity, storytelling, and strong advocacy for protecting marine ecosystems."
+        "video": "videos/school-highlights.mp4",
+        "thumbnail": "images/video-thumbs/school.jpg"
       },
       {
         "year": "2021",
