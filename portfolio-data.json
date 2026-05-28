@@ -168,8 +168,8 @@
           { "image": "images/gallery/science_2.jpg", "title": "Chemistry", "description": "Chemistry" },
           { "image": "images/gallery/science_3.jpg", "title": "Boat from Recycle matrials", "description": "Recycle" },
           { "image": "images/gallery/science_8.jpg", "title": "Electric Circuit", "description": "Electric" },
-          {"video": "videos/science_1.mp4", "title": "Combustion energy into electricity", "description": "Combustion"},
-          { "image": "images/gallery/science_5.HEIC", "title": "Physics2", "description": "Physics" }
+          {"video": "videos/science_1.mp4", "title": "Combustion energy into electricity", "description": "Combustion"}
+        
  
         ]
       },
