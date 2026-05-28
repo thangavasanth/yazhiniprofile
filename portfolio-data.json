@@ -164,12 +164,12 @@
         "photos": [
           { "image": "images/gallery/science_4.jpg", "title": "My Room & My lab", "description": "My Room & My lab" },
           { "image": "images/gallery/science_6.JPG", "title": "Biology", "description": "Biology" },
-          { "image": "images/gallery/science_9.JPG", "title": "Physics", "description": "Physics" },
+          { "image": "images/gallery/science_9.JPG", "title": "Physics1", "description": "Physics" },
           { "image": "images/gallery/science_2.jpg", "title": "Chemistry", "description": "Chemistry" },
           { "image": "images/gallery/science_3.jpg", "title": "Boat from Recycle matrials", "description": "Recycle" },
           { "image": "images/gallery/science_8.jpg", "title": "Electric Circuit", "description": "Electric" },
           {"video": "videos/science_1.mp4", "title": "Combustion energy into electricity", "description": "Combustion"},
-          { "image": "images/gallery/science_5.HEIC", "title": "Physics", "description": "Physics" }
+          { "image": "images/gallery/science_5.HEIC", "title": "Physics2", "description": "Physics" }
  
         ]
       },
