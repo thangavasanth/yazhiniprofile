@@ -162,12 +162,15 @@
         "title": "STEM & Science",
         "description": "Exploring the wonders of science, technology, and innovation",
         "photos": [
-          { "image": "images/gallery/science_4.jpg", "title": "My Room", "description": "My Room & My lab" },
-          { "image": "images/gallery/science_2.jpg", "title": "Science Project", "description": "Working on the renewable energy project" },
-          { "image": "images/gallery/science_3.jpg", "title": "Boat from Recycle matrials", "description": "Recycle matrials" },
-          { "image": "images/gallery/science_8.jpg", "title": "Electric Circuit", "description": "Electric Circuit" },
-          {"video": "videos/science_1.mp4", "title": "Science Experiment", "description": "Combustion energy into electricity."},
-         
+          { "image": "images/gallery/science_4.jpg", "title": "My Room & My lab", "description": "" },
+          { "image": "images/gallery/science_6.JPG", "title": "Biology", "description": "" },
+          { "image": "images/gallery/science_9.JPG", "title": "Biology", "description": "" },
+          { "image": "images/gallery/science_2.jpg", "title": "Working on the renewable energy project", "description": "" },
+          { "image": "images/gallery/science_3.jpg", "title": "Boat from Recycle matrials", "description": "" },
+          { "image": "images/gallery/science_8.jpg", "title": "Electric Circuit", "description": "" },
+          {"video": "videos/science_1.mp4", "title": "Combustion energy into electricity", "description": ""},
+          { "image": "images/gallery/science_5.HEIC", "title": "Physics", "description": "" }
+ 
         ]
       },
       {
