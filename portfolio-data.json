@@ -162,8 +162,9 @@
         "title": "STEM & Science",
         "description": "Exploring the wonders of science, technology, and innovation",
         "photos": [
+          
+          { "image": "images/gallery/science_2.jpg", "title": "Science Project", "description": "Working on the renewable energy project" },
           {"video": "videos/science_1.mp4", "title": "Science Experiment", "description": "Combustion energy into electricity using a free-piston mechanism and exhaust-driven turbine generation."},
-          { "image": "images/gallery/stem-1.jpg", "title": "Science Project", "description": "Working on the renewable energy project" },
           { "image": "images/gallery/stem-2.jpg", "title": "Robotics Lab", "description": "Building robots at the workshop" },
           { "image": "images/gallery/stem-3.jpg", "title": "Math Competition", "description": "At the Math Olympiad venue" }
         ]
