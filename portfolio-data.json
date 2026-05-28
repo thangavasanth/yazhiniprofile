@@ -144,9 +144,10 @@
         "title": "Traditional & Cultural",
         "description": "Celebrating heritage through dance, music, and cultural festivities",
         "photos": [
-          { "image": "images/gallery/traditional-1.jpg", "title": "Classical Dance Performance", "description": "Performing Bharatanatyam at the school cultural fest" },
-          { "image": "images/gallery/traditional-2.jpg", "title": "Pongal Celebration", "description": "Celebrating the harvest festival with traditional attire" },
-          { "image": "images/gallery/traditional-3.jpg", "title": "Diwali Festivities", "description": "Lighting diyas and spreading joy during Diwali celebrations" }
+          { "image": "images/gallery/traditional-1.jpg", "title": "karantic Music", "description": "." },
+          { "image": "images/gallery/traditional-2.jpg", "title": "Choir at SOTA", "description": "." },
+          { "image": "images/gallery/traditional-3.jpg", "title": "Violin", "description": "." },
+          { "image": "images/gallery/traditional-4.jpg", "title": "Piono", "description": "." }
         ]
       },
       {
@@ -168,8 +169,8 @@
           { "image": "images/gallery/science_2.jpg", "title": "Chemistry", "description": "." },
           { "image": "images/gallery/science_3.jpg", "title": "Boat from Recycle matrials", "description": "." },
           { "image": "images/gallery/science_8.jpg", "title": "Electric Circuit", "description": "." },
-          {"video": "videos/science_1.mp4", "title": "Combustion energy into electricity", "description": "."}
-        
+          {"video": "videos/science_1.mp4", "title": "Combustion energy into electricity", "description": "."},
+        { "image": "images/gallery/science_10.jpg", "title": "Starhazing", "description": "." }
  
         ]
       },
