@@ -41,6 +41,7 @@
         "title": "Singapore Astronomy Olympiad",
         "highlight": "Bronze Award • Hall of Fame Recognition",
         "description": "Awarded Bronze in the Singapore Astronomy Olympiad and recognized in the Hall of Fame for outstanding performance in a national-level astronomy competition. Demonstrated strong passion, curiosity, and capability in astronomy, STEM learning, and scientific exploration.",
+        "reflection": "This competition deepened my understanding of astrophysics and celestial mechanics. I learned the value of self-directed study, tackling challenging problems under pressure, and the thrill of representing my school on a national stage.",
         "image": "images/timeline/Olympiad.jpg"
       },
       {
@@ -49,6 +50,7 @@
         "title": "Media Challange",
         "highlight": "Best Content Assets Prize",
         "description": "Part of Team Chimichanga which won the Best Content Assets Prize at The Media Challenge 2026 representing Cedar Girls",
+        "reflection": "Working as a team taught me the power of collaboration, creative storytelling, and how to communicate ideas effectively through media. I discovered my passion for content creation and visual communication.",
         "image": "images/timeline/mediachallenge.jpg"
       },
       {
@@ -57,6 +59,7 @@
         "title": "Vice President - Environment Club",
         "highlight": "Leadership & Environmental Initiatives",
         "description": "Appointed as Vice President of the Environment Club in Cedar Girls’ Secondary School. Demonstrated leadership, teamwork, responsibility, and active participation in environmental awareness programs, sustainability initiatives, school events, and student engagement activities.",
+        "reflection": "Leading the Environment Club taught me how to inspire others toward a shared cause. I grew as a leader by learning to plan events, delegate responsibilities, and drive meaningful change in our school community.",
         "image": "images/timeline/evc_VP.jpg"
       },
       {
@@ -65,6 +68,7 @@
         "title": "Spelling Bee Champion",
         "highlight": "Achievement",
         "description": "Secured first place in the regional Spelling Bee competition, competing against over 200 participants from across the district.",
+        "reflection": "Preparing for the Spelling Bee sharpened my vocabulary, discipline, and ability to stay calm under pressure. It reinforced that consistent practice and attention to detail can lead to extraordinary results.",
         "image": "images/timeline/spelling-bee.jpg"
       },
       {
@@ -73,6 +77,7 @@
         "title": "Bow Seat: Ocean Awareness Contest",
         "highlight": "Creative",
         "description": "Received the Special Mention Award and cash recognition in the Ocean Awareness Contest for producing an impactful short film focused on ocean conservation, marine sustainability, and environmental awareness. The project demonstrated creativity, storytelling, and strong advocacy for protecting marine ecosystems.",
+        "reflection": "This project taught me how art and storytelling can be powerful tools for advocacy. I learned video production skills and gained a deeper appreciation for ocean conservation and our responsibility toward the environment.",
         "image": "images/timeline/oceanawarenesscontest.jpg"
       },
       {
@@ -81,6 +86,7 @@
         "title": "Annual Day Lead Performer",
         "highlight": "Cultural",
         "description": "Led the cultural performance at the school's Annual Day celebration, choreographing and performing a traditional dance piece.",
+        "reflection": "Choreographing and performing on stage built my confidence and taught me the importance of cultural expression. I learned how to lead a team creatively and deliver under the spotlight.",
         "image": "images/timeline/annual-day.jpg"
       },
       {
@@ -89,6 +95,7 @@
         "title": "Math Olympiad Finalist",
         "highlight": "STEM",
         "description": "Qualified as a finalist in the State-level Math Olympiad, demonstrating exceptional problem-solving and analytical thinking skills.",
+        "reflection": "The Math Olympiad pushed me to think beyond textbook problems. I developed stronger analytical reasoning and learned that persistence through difficult problems is where real growth happens.",
         "image": "images/timeline/math-olympiad.jpg"
       },
       {
@@ -97,6 +104,7 @@
         "title": "Robotics Workshop Certificate",
         "highlight": "STEM",
         "description": "Completed an advanced robotics workshop, building and programming a line-following robot using Arduino and sensors.",
+        "reflection": "Hands-on robotics taught me the fundamentals of engineering, coding logic, and sensor integration. It sparked my interest in how technology can solve real-world problems.",
         "image": "images/timeline/robotics.jpg"
       },
       {
@@ -105,6 +113,7 @@
         "title": "Best Student Award",
         "highlight": "Achievement",
         "description": "Received the prestigious Best Student Award for overall academic excellence, extracurricular participation, and exemplary conduct.",
+        "reflection": "This recognition reminded me that excellence is not just about academics — it's about being a well-rounded individual. Balancing studies, activities, and good conduct taught me time management and integrity.",
         "image": "images/timeline/best-student.jpg"
       },
       {
@@ -114,6 +123,7 @@
         "highlight": "Creative",
         "description": "Received the Special Mention Award and cash recognition in the Ocean Awareness Contest for producing an impactful short film focused on ocean conservation, marine sustainability, and environmental awareness. The project demonstrated creativity, storytelling, and strong advocacy for protecting marine ecosystems.",
         "video": "videos/school-highlights.mp4",
+        "reflection": "Creating this short film taught me how to merge creativity with purpose. I learned filmmaking fundamentals and realized that young voices can make a real impact on global issues like ocean conservation.",
         "thumbnail": "images/video-thumbs/school.jpg"
       },
       {
@@ -121,6 +131,7 @@
         "title": "Started School Journey",
         "highlight": "Milestone",
         "description": "Began a new chapter of learning and growth, stepping into a world of endless possibilities, friendships, and discoveries.",
+        "reflection": "Starting school was the beginning of everything — new friendships, new challenges, and a curiosity that continues to grow every day. It taught me to embrace change and stay open to learning.",
         "image": "images/timeline/school-start.jpg"
       }
     ]

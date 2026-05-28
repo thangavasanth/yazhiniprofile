@@ -223,7 +223,18 @@
       margin-bottom: 0.5rem;
     }
     .timeline-card .tl-desc {
-      font-size: 0.85rem; color: #888; line-height: 1.6; margin-bottom: 0.8rem;
+      font-size: 0.85rem; color: #888; line-height: 1.6; margin-bottom: 0.6rem;
+    }
+    .timeline-card .tl-reflection {
+      font-size: 0.82rem; color: #a0a0b8; line-height: 1.6;
+      margin-bottom: 0.8rem; padding: 0.6rem 0.8rem;
+      border-left: 2px solid rgba(168,85,247,0.4);
+      background: rgba(168,85,247,0.04); border-radius: 0 8px 8px 0;
+    }
+    .timeline-card .tl-reflection-label {
+      font-weight: 700; color: #c4b5fd; font-size: 0.72rem;
+      text-transform: uppercase; letter-spacing: 0.08em;
+      margin-bottom: 0.2rem; display: block;
     }
     .timeline-card .tl-img {
       width: 100%; height: 140px; border-radius: 10px; object-fit: cover;
@@ -535,6 +546,7 @@
               '<span class="tl-highlight">' + event.highlight + '</span>' +
               '<h3>' + event.title + '</h3>' +
               '<p class="tl-desc">' + event.description + '</p>' +
+              (event.reflection ? '<div class="tl-reflection"><span class="tl-reflection-label">Reflection</span>' + event.reflection + '</div>' : '') +
               '<img class="tl-img" src="' + event.image + '" alt="' + event.title + '" onerror="handleImgError(this,\'timeline\')" />' +
             '</div>' +
           '</div>'
