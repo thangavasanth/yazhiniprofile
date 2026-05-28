@@ -258,11 +258,12 @@
       overflow: hidden; border-radius: 16px; position: relative;
       cursor: pointer;
     }
-    .gallery-item img {
+    .gallery-item img, .gallery-item video {
       width: 100%; height: 240px; object-fit: cover;
       transition: transform 0.5s ease;
     }
     .gallery-item:hover img { transform: scale(1.08); }
+    .gallery-item video { border-radius: 16px; }
     .gallery-overlay {
       position: absolute; bottom: 0; left: 0; right: 0;
       padding: 1.2rem; background: linear-gradient(transparent, rgba(0,0,0,0.85));
@@ -568,15 +569,30 @@
     /* ========== RENDER GALLERY ========== */
     function renderGallery(gallery) {
       const categoriesHtml = gallery.categories.map(cat => {
-        const photosHtml = cat.photos.map(photo =>
-          '<div class="gallery-item glass" data-src="' + photo.image + '" data-title="' + photo.title + '">' +
-            '<img src="' + photo.image + '" alt="' + photo.title + '" loading="lazy" onerror="handleImgError(this,\'gallery\')" />' +
-            '<div class="gallery-overlay">' +
-              '<h4>' + photo.title + '</h4>' +
-              '<p>' + photo.description + '</p>' +
-            '</div>' +
-          '</div>'
-        ).join('');
+        const photosHtml = cat.photos.map(photo => {
+          if (photo.video) {
+            return (
+              '<div class="gallery-item glass">' +
+                '<video controls preload="metadata" style="height:240px;width:100%;object-fit:cover;border-radius:16px;">' +
+                  '<source src="' + photo.video + '" type="video/mp4" />' +
+                '</video>' +
+                '<div class="gallery-overlay" style="opacity:1;transform:none;background:linear-gradient(transparent 60%, rgba(0,0,0,0.8));pointer-events:none;">' +
+                  '<h4>' + photo.title + '</h4>' +
+                  '<p>' + photo.description + '</p>' +
+                '</div>' +
+              '</div>'
+            );
+          }
+          return (
+            '<div class="gallery-item glass" data-src="' + photo.image + '" data-title="' + photo.title + '">' +
+              '<img src="' + photo.image + '" alt="' + photo.title + '" loading="lazy" onerror="handleImgError(this,\'gallery\')" />' +
+              '<div class="gallery-overlay">' +
+                '<h4>' + photo.title + '</h4>' +
+                '<p>' + photo.description + '</p>' +
+              '</div>' +
+            '</div>'
+          );
+        }).join('');
 
         return (
           '<div class="gallery-category fade-in">' +
@@ -649,6 +665,7 @@
       const lbCaption = document.getElementById('lightbox-caption');
 
       document.querySelectorAll('.gallery-item').forEach(item => {
+        if (!item.dataset.src) return;
         item.addEventListener('click', () => {
           lbImg.src = item.dataset.src;
           lbCaption.textContent = item.dataset.title;
