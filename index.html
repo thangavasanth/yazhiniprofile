@@ -143,7 +143,8 @@
     /* Profile Card */
     .profile-card {
       padding: 1.8rem; text-align: center;
-      min-width: 280px; max-width: 380px;
+      min-width: 280px; max-width: 440px;
+      overflow: hidden;
     }
     .profile-photo-wrapper {
       width: 120px; height: 120px; margin: 0 auto 1.2rem;
@@ -156,12 +157,12 @@
     }
     .achievement-badges {
       display: flex; gap: 0.5rem; justify-content: center;
-      flex-wrap: nowrap; margin-bottom: 1.2rem;
+      flex-wrap: wrap; margin-bottom: 1.2rem;
     }
     .badge {
       display: inline-flex; align-items: center; gap: 0.3rem;
       padding: 0.3rem 0.7rem; border-radius: 20px;
-      font-size: 0.72rem; font-weight: 600; white-space: nowrap;
+      font-size: 0.72rem; font-weight: 600;
       background: rgba(168,85,247,0.12);
       color: #c4b5fd;
       border: 1px solid rgba(168,85,247,0.2);
