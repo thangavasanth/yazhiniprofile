@@ -259,15 +259,7 @@
         
         ]
       },
-      {
-        "title": "Awards & Achievements",
-        "description": "Proud moments of recognition and accomplishment",
-        "photos": [
-          { "image": "images/gallery/award-1.jpg", "title": "Gold Medal Ceremony", "description": "Receiving the gold medal at the science fair" },
-          { "image": "images/gallery/award-2.jpg", "title": "Best Student Trophy", "description": "Honored with the Best Student Award" },
-          { "image": "images/gallery/award-3.jpg", "title": "Certificate of Excellence", "description": "Academic excellence recognition ceremony" }
-        ]
-      },
+      
       {
         "title": "STEM & Science",
         "description": "Exploring the wonders of science, technology, and innovation",
