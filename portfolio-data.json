@@ -64,12 +64,12 @@
       },
       {
         "year": "2024",
-        "month": "August",
-        "title": "Spelling Bee Champion",
-        "highlight": "Achievement",
-        "description": "Secured first place in the regional Spelling Bee competition, competing against over 200 participants from across the district.",
-        "reflection": "Preparing for the Spelling Bee sharpened my vocabulary, discipline, and ability to stay calm under pressure. It reinforced that consistent practice and attention to detail can lead to extraordinary results.",
-        "image": "images/timeline/spelling-bee.jpg"
+        "month": "June",
+        "title": "English Literature",
+        "highlight": "The Teenage Paradox",
+        "description": "A reflective piece capturing the emotional complexity of adolescence, balancing individuality with the need for acceptance while navigating growth and uncertainty.",
+        "reflection": "Writing this poem helped me understand the contradictions of growing up, especially the struggle between being myself and fitting in. It showed me that confusion is part of growth and that discovering my identity takes time.",
+        "video": "videos/poem_1.mp4"
       },
       {
         "year": "2024",
@@ -144,10 +144,11 @@
         "title": "Arts & Cultural",
         "description": "Celebrating heritage through dance, music, and cultural festivities",
         "photos": [
-          { "image": "images/gallery/traditional-1.jpg", "title": "karantic Music", "description": "." },
+          { "image": "images/gallery/traditional-1.jpg", "title": "Karantic Music", "description": "." },
           { "image": "images/gallery/traditional-2.jpg", "title": "Choir at SOTA", "description": "." },
           { "image": "images/gallery/traditional-3.jpg", "title": "Violin", "description": "." },
           { "image": "images/gallery/traditional-4.jpg", "title": "Piono", "description": "." }
+          {"video": "videos/poem_1.mp4", "title": "Combustion energy into electricity", "description": "."},
         ]
       },
       {
