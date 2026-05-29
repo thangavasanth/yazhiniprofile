@@ -549,7 +549,9 @@
               '<h3>' + event.title + '</h3>' +
               '<p class="tl-desc">' + event.description + '</p>' +
               (event.reflection ? '<div class="tl-reflection"><span class="tl-reflection-label">Reflection</span>' + event.reflection + '</div>' : '') +
-              '<img class="tl-img" src="' + event.image + '" alt="' + event.title + '" onerror="handleImgError(this,\'timeline\')" />' +
+              (event.video
+                ? '<video class="tl-img" controls preload="metadata"><source src="' + event.video + '" type="video/mp4" /></video>'
+                : '<img class="tl-img" src="' + event.image + '" alt="' + event.title + '" onerror="handleImgError(this,\'timeline\')" />') +
             '</div>' +
           '</div>'
         );
