@@ -292,15 +292,7 @@
           { "image": "images/gallery/school-3.jpg", "title": "Field Trip", "description": "Educational visit to the science museum" }
         ]
       },
-      {
-        "title": "Taekwondo Journey",
-        "description": "Discipline, strength, and the path of martial arts",
-        "photos": [
-          { "image": "images/gallery/taekwondo-1.jpg", "title": "Training Session", "description": "Practicing kicks at the dojo" },
-          { "image": "images/gallery/taekwondo-2.jpg", "title": "Belt Ceremony", "description": "Receiving the Yellow Belt" },
-          { "image": "images/gallery/taekwondo-3.jpg", "title": "Sparring Match", "description": "Competing in a friendly sparring match" }
-        ]
-      },
+     
       {
         "title": "Childhood Memories",
         "description": "Precious moments from the early years of wonder and joy",
@@ -310,15 +302,7 @@
           { "image": "images/gallery/childhood-3.jpg", "title": "Garden Adventures", "description": "Exploring nature and the great outdoors" }
         ]
       },
-      {
-        "title": "Leadership & Participation",
-        "description": "Leading by example and participating with enthusiasm",
-        "photos": [
-          { "image": "images/gallery/leadership-1.jpg", "title": "Morning Assembly", "description": "Leading the school morning assembly" },
-          { "image": "images/gallery/leadership-2.jpg", "title": "Team Project", "description": "Collaborating with teammates on a group project" },
-          { "image": "images/gallery/leadership-3.jpg", "title": "Community Service", "description": "Volunteering for a community cleanup drive" }
-        ]
-      },
+      
       {
         "title": "Friends & Events",
         "description": "Cherished moments with friends and at special events",
@@ -346,12 +330,7 @@
         "video": "videos/science-fair.mp4",
         "thumbnail": "images/video-thumbs/science.jpg"
       },
-      {
-        "title": "Taekwondo Grading",
-        "description": "Yellow Belt grading ceremony and demonstration",
-        "video": "videos/taekwondo-grading.mp4",
-        "thumbnail": "images/video-thumbs/taekwondo.jpg"
-      },
+      
       {
         "title": "School Day Highlights",
         "description": "A compilation of memorable moments from the school year",
