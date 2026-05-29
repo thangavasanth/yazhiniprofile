@@ -205,12 +205,17 @@
       box-shadow: 0 0 16px rgba(168,85,247,0.4);
       z-index: 2;
     }
+    .timeline-year-label {
+      position: absolute; left: 50%; top: 2.2rem;
+      transform: translateX(-50%);
+      background: linear-gradient(135deg, #a855f7, #6366f1);
+      color: #fff; font-size: 0.7rem; font-weight: 700;
+      padding: 0.2rem 0.6rem; border-radius: 10px;
+      white-space: nowrap; z-index: 2;
+      letter-spacing: 0.03em;
+    }
     .timeline-card {
       padding: 1.2rem; width: 100%;
-    }
-    .timeline-card .tl-year {
-      font-size: 0.75rem; font-weight: 700; color: #a855f7;
-      letter-spacing: 0.05em; margin-bottom: 0.3rem;
     }
     .timeline-card h3 {
       font-size: 1.1rem; color: #fff; margin-bottom: 0.3rem;
@@ -351,6 +356,7 @@
       .timeline-item.left,
       .timeline-item.right { padding-left: 3.5rem; padding-right: 0; justify-content: flex-start; }
       .timeline-dot { left: 1.5rem; }
+      .timeline-year-label { left: 1.5rem; }
     }
     @media (max-width: 768px) {
       .nav-links { display: none; }
@@ -543,8 +549,8 @@
         return (
           '<div class="timeline-item ' + side + '">' +
             '<div class="timeline-dot"></div>' +
+            '<div class="timeline-year-label">' + yearLabel + '</div>' +
             '<div class="timeline-card glass glass-hover">' +
-              '<div class="tl-year">' + yearLabel + '</div>' +
               '<span class="tl-highlight">' + event.highlight + '</span>' +
               '<h3>' + event.title + '</h3>' +
               '<p class="tl-desc">' + event.description + '</p>' +
