@@ -127,22 +127,23 @@
       },
       {
         "year": "2022",
-        "month": "March",
-        "title": "Art Competition Winner",
-        "highlight": "Creative",
-        "description": "Received the Special Mention Award and cash recognition in the Ocean Awareness Contest for producing an impactful short film focused on ocean conservation, marine sustainability, and environmental awareness. The project demonstrated creativity, storytelling, and strong advocacy for protecting marine ecosystems.",
-        "video": "videos/school-highlights.mp4",
-        "reflection": "Creating this short film taught me how to merge creativity with purpose. I learned filmmaking fundamentals and realized that young voices can make a real impact on global issues like ocean conservation.",
-        "thumbnail": "images/video-thumbs/school.jpg"
+        "month": "July",
+        "title": "Innovative Teamplayer Award",
+        "highlight": "Recognised for contribution and teamwork in choir",
+        "description": "Awarded by Punggol Primary School in recognition of outstanding contribution towards team achievement in choir, demonstrating collaboration, initiative, and active participation.",
+        "reflection": "This experience taught me the importance of teamwork and contributing meaningfully to group success, while also valuing different ideas and working together towards a common goal.",
+        "image": "images/timeline/Innovative_Teamplayer_Award.jpg"
       },
       {
-        "year": "2021",
-        "title": "Started School Journey",
-        "highlight": "Milestone",
-        "description": "Began a new chapter of learning and growth, stepping into a world of endless possibilities, friendships, and discoveries.",
-        "reflection": "Starting school was the beginning of everything — new friendships, new challenges, and a curiosity that continues to grow every day. It taught me to embrace change and stay open to learning.",
-        "image": "images/timeline/school-start.jpg"
+        "year": "2022",
+        "month": "August",
+        "title": "Award of Excellence – Mother Tongue Language",
+        "highlight": "Recognised for excellence in mother tongue language and cultural understanding",
+        "description": "Awarded for excellent performance in Mother Tongue Language, demonstrating strong language proficiency and appreciation of cultural knowledge.",
+        "reflection": "This recognition strengthened my confidence in expressing myself in my mother tongue and deepened my appreciation for language and cultural heritage.",
+        "image": "images/timeline/Mother_Tongue_Award.jpg"
       }
+      
     ]
   },
   "gallery": {
