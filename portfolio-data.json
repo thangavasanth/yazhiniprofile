@@ -13,7 +13,7 @@
   "hero": {
     "subtitle": "Welcome to My World",
     "name": "Yazhini Vasanth",
-    "description": "A passionate and curious student with a love for learning, leadership, and creativity. From STEM explorations to cultural celebrations, every step of my journey reflects dedication, perseverance, and the joy of discovery.",
+    "description": "Driven by curiosity, I enjoy learning, exploring new ideas, and expressing creativity. I value leadership, collaboration, and using my experiences to grow while contributing positively to those around me. <br> <br>I am particularly interested in understanding how things work and applying what I learn in meaningful ways. Through academics, leadership roles, and creative pursuits, I continue to develop a balanced perspective that values both growth and contribution.",
     "buttons": [
       { "text": "View Journey", "href": "#timeline", "style": "primary" },
       { "text": "Explore Gallery", "href": "#gallery", "style": "secondary" }
