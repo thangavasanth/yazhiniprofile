@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yazhini Vasanth | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --bg: #faf8f5;
+      --bg-card: #ffffff;
+      --text: #2d2d2d;
+      --text-muted: #6b6b6b;
+      --accent: #c4956a;
+      --accent-light: #e8d5c4;
+      --accent-dark: #9b6b42;
+      --border: #eae4dc;
+      --shadow: 0 4px 24px rgba(0,0,0,0.06);
+      --shadow-hover: 0 8px 40px rgba(0,0,0,0.1);
+      --serif: 'Playfair Display', Georgia, serif;
+      --sans: 'Inter', -apple-system, sans-serif;
+      --radius: 12px;
+    }
+
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: var(--sans); background: var(--bg); color: var(--text);
+      line-height: 1.7; -webkit-font-smoothing: antialiased;
+    }
+
+    /* ========== NAV ========== */
+    nav {
+      position: fixed; top: 0; width: 100%; z-index: 1000;
+      background: rgba(250,248,245,0.92); backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 1rem 3rem; transition: box-shadow 0.3s;
+    }
+    nav.scrolled { box-shadow: 0 2px 20px rgba(0,0,0,0.05); }
+    .nav-logo {
+      font-family: var(--serif); font-size: 1.4rem; font-weight: 700;
+      color: var(--accent-dark); text-decoration: none;
+    }
+    .nav-links { display: flex; gap: 2rem; list-style: none; }
+    .nav-links a {
+      text-decoration: none; color: var(--text-muted); font-size: 0.9rem;
+      font-weight: 500; letter-spacing: 0.02em; position: relative;
+      transition: color 0.3s;
+    }
+    .nav-links a:hover, .nav-links a.active { color: var(--accent-dark); }
+    .nav-links a::after {
+      content: ''; position: absolute; bottom: -4px; left: 0;
+      width: 0; height: 2px; background: var(--accent);
+      transition: width 0.3s;
+    }
+    .nav-links a:hover::after, .nav-links a.active::after { width: 100%; }
+    .hamburger { display: none; cursor: pointer; flex-direction: column; gap: 4px; }
+    .hamburger span { width: 22px; height: 2px; background: var(--text); transition: 0.3s; }
+
+    /* ========== HERO ========== */
+    .hero {
+      min-height: 100vh; display: flex; align-items: center;
+      padding: 6rem 3rem 4rem; max-width: 1200px; margin: 0 auto;
+      gap: 4rem;
+    }
+    .hero-text { flex: 1.2; }
+    .hero-text .subtitle {
+      font-size: 0.85rem; font-weight: 600; color: var(--accent);
+      text-transform: uppercase; letter-spacing: 0.15em; margin-bottom: 0.8rem;
+    }
+    .hero-text h1 {
+      font-family: var(--serif); font-size: 3.5rem; font-weight: 800;
+      color: var(--text); line-height: 1.15; margin-bottom: 1.2rem;
+    }
+    .hero-text .desc {
+      font-size: 1rem; color: var(--text-muted); line-height: 1.8;
+      margin-bottom: 2rem; max-width: 520px;
+    }
+    .hero-buttons { display: flex; gap: 1rem; flex-wrap: wrap; }
+    .btn-primary {
+      padding: 0.8rem 1.8rem; border-radius: 50px; border: none;
+      background: var(--accent); color: #fff; font-weight: 600;
+      font-size: 0.9rem; cursor: pointer; text-decoration: none;
+      transition: all 0.3s; box-shadow: 0 4px 16px rgba(196,149,106,0.3);
+    }
+    .btn-primary:hover { background: var(--accent-dark); transform: translateY(-2px); }
+    .btn-secondary {
+      padding: 0.8rem 1.8rem; border-radius: 50px;
+      border: 2px solid var(--accent); color: var(--accent-dark);
+      font-weight: 600; font-size: 0.9rem; cursor: pointer;
+      text-decoration: none; background: transparent; transition: all 0.3s;
+    }
+    .btn-secondary:hover { background: var(--accent); color: #fff; }
+
+    .hero-card {
+      flex: 0.8; background: var(--bg-card); border-radius: var(--radius);
+      padding: 2rem; border: 1px solid var(--border); box-shadow: var(--shadow);
+      text-align: center;
+    }
+    .hero-card img {
+      width: 130px; height: 150px; object-fit: cover; border-radius: 10px;
+      border: 3px solid var(--accent-light); margin-bottom: 1rem;
+    }
+    .hero-card .achievements { display: flex; flex-wrap: wrap; gap: 0.4rem; justify-content: center; margin-bottom: 1rem; }
+    .hero-card .badge {
+      font-size: 0.68rem; font-weight: 600; padding: 0.25rem 0.6rem;
+      border-radius: 20px; background: var(--accent-light); color: var(--accent-dark);
+    }
+    .hero-card .highlights { text-align: left; }
+    .hero-card .highlights h4 {
+      font-size: 0.72rem; font-weight: 700; text-transform: uppercase;
+      letter-spacing: 0.08em; color: var(--accent); margin: 0.8rem 0 0.3rem;
+    }
+    .hero-card .highlights span {
+      font-size: 0.78rem; color: var(--text-muted); display: inline-block;
+      margin-right: 0.5rem;
+    }
+
+    /* ========== SECTIONS ========== */
+    section { padding: 5rem 3rem; }
+    .section-header { text-align: center; margin-bottom: 3rem; }
+    .section-header h2 {
+      font-family: var(--serif); font-size: 2.5rem; font-weight: 700;
+      color: var(--text); margin-bottom: 0.5rem;
+    }
+    .section-header p { font-size: 1rem; color: var(--text-muted); }
+    .section-divider {
+      width: 60px; height: 3px; background: var(--accent);
+      margin: 1rem auto 0; border-radius: 2px;
+    }
+
+    /* ========== HORIZONTAL TIMELINE ========== */
+    .timeline-section { overflow: hidden; }
+    .timeline-track-wrapper {
+      position: relative; overflow-x: auto; overflow-y: visible;
+      padding: 2rem 0 3rem; -webkit-overflow-scrolling: touch;
+      scrollbar-width: thin; scrollbar-color: var(--accent-light) transparent;
+    }
+    .timeline-track-wrapper::-webkit-scrollbar { height: 6px; }
+    .timeline-track-wrapper::-webkit-scrollbar-track { background: transparent; }
+    .timeline-track-wrapper::-webkit-scrollbar-thumb { background: var(--accent-light); border-radius: 3px; }
+
+    .timeline-track {
+      display: flex; gap: 2rem; padding: 0 2rem;
+      position: relative; min-width: max-content;
+    }
+    .timeline-track::before {
+      content: ''; position: absolute; top: 50%;
+      left: 0; right: 0; height: 2px;
+      background: linear-gradient(90deg, transparent, var(--accent-light) 5%, var(--accent) 50%, var(--accent-light) 95%, transparent);
+      transform: translateY(-50%); z-index: 0;
+    }
+    .timeline-card {
+      position: relative; width: 300px; flex-shrink: 0;
+      background: var(--bg-card); border: 1px solid var(--border);
+      border-radius: var(--radius); padding: 1.5rem;
+      box-shadow: var(--shadow); transition: all 0.4s;
+      z-index: 1;
+    }
+    .timeline-card:hover {
+      box-shadow: var(--shadow-hover); transform: translateY(-4px);
+    }
+    .timeline-card .card-number {
+      position: absolute; top: -12px; left: 1.5rem;
+      font-family: var(--serif); font-size: 1.8rem; font-weight: 800;
+      color: var(--accent); line-height: 1; opacity: 0.3;
+    }
+    .timeline-card .card-date {
+      font-size: 0.72rem; font-weight: 700; text-transform: uppercase;
+      letter-spacing: 0.1em; color: var(--accent); margin-bottom: 0.4rem;
+    }
+    .timeline-card h3 {
+      font-family: var(--serif); font-size: 1.1rem; font-weight: 700;
+      color: var(--text); margin-bottom: 0.3rem;
+    }
+    .timeline-card .card-highlight {
+      font-size: 0.7rem; font-weight: 600; text-transform: uppercase;
+      letter-spacing: 0.05em; color: var(--accent-dark);
+      padding: 0.15rem 0.5rem; border-radius: 8px;
+      background: var(--accent-light); display: inline-block;
+      margin-bottom: 0.5rem;
+    }
+    .timeline-card .card-desc {
+      font-size: 0.82rem; color: var(--text-muted); line-height: 1.6;
+      margin-bottom: 0.6rem;
+      display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+    .timeline-card .card-reflection {
+      font-size: 0.78rem; color: var(--text-muted); line-height: 1.5;
+      padding: 0.5rem 0.7rem; border-left: 2px solid var(--accent-light);
+      background: rgba(196,149,106,0.04); border-radius: 0 6px 6px 0;
+      margin-bottom: 0.6rem;
+      display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+    .timeline-card .card-reflection-label {
+      font-weight: 700; color: var(--accent); font-size: 0.68rem;
+      text-transform: uppercase; letter-spacing: 0.06em; display: block;
+      margin-bottom: 0.15rem;
+    }
+    .timeline-card .card-media {
+      width: 100%; height: 140px; border-radius: 8px; object-fit: contain;
+      background: #f0ece7; border: 1px solid var(--border);
+    }
+    .timeline-dot {
+      position: absolute; left: 50%; bottom: -28px;
+      width: 12px; height: 12px; border-radius: 50%;
+      background: var(--accent); border: 3px solid var(--bg);
+      transform: translateX(-50%); box-shadow: 0 0 0 3px var(--accent-light);
+    }
+
+    .timeline-scroll-hint {
+      text-align: center; margin-top: 1rem;
+      font-size: 0.8rem; color: var(--text-muted); opacity: 0.7;
+    }
+
+    /* ========== GALLERY ========== */
+    .gallery-section { max-width: 1200px; margin: 0 auto; }
+    .gallery-category { margin-bottom: 3.5rem; }
+    .gallery-category-header { margin-bottom: 1.2rem; }
+    .gallery-category-header h3 {
+      font-family: var(--serif); font-size: 1.5rem; color: var(--text);
+      margin-bottom: 0.2rem;
+    }
+    .gallery-category-header p { font-size: 0.85rem; color: var(--text-muted); }
+    .gallery-grid {
+      columns: 3; column-gap: 1rem;
+    }
+    .gallery-item {
+      break-inside: avoid; margin-bottom: 1rem;
+      border-radius: var(--radius); overflow: hidden;
+      position: relative; cursor: pointer;
+      border: 1px solid var(--border);
+      transition: all 0.4s;
+    }
+    .gallery-item:hover { box-shadow: var(--shadow-hover); transform: translateY(-3px); }
+    .gallery-item img, .gallery-item video {
+      width: 100%; display: block; object-fit: contain;
+      background: #f0ece7; min-height: 160px;
+    }
+    .gallery-item video { border-radius: 0; }
+    .gallery-overlay {
+      position: absolute; bottom: 0; left: 0; right: 0;
+      padding: 1rem; background: linear-gradient(transparent, rgba(255,255,255,0.95));
+      transform: translateY(100%); transition: transform 0.4s;
+    }
+    .gallery-item:hover .gallery-overlay { transform: translateY(0); }
+    .gallery-overlay h4 {
+      font-family: var(--serif); font-size: 0.9rem; color: var(--text);
+      margin-bottom: 0.15rem;
+    }
+    .gallery-overlay p { font-size: 0.75rem; color: var(--text-muted); }
+
+    /* ========== LIGHTBOX ========== */
+    .lightbox {
+      display: none; position: fixed; top: 0; left: 0;
+      width: 100%; height: 100%; z-index: 2000;
+      background: rgba(250,248,245,0.96); backdrop-filter: blur(8px);
+      justify-content: center; align-items: center;
+    }
+    .lightbox.active { display: flex; }
+    .lightbox img {
+      max-width: 90%; max-height: 85vh; border-radius: var(--radius);
+      box-shadow: var(--shadow-hover);
+    }
+    .lightbox-close {
+      position: absolute; top: 1.5rem; right: 2rem;
+      font-size: 2rem; color: var(--text); cursor: pointer;
+      background: none; border: none; transition: transform 0.3s;
+    }
+    .lightbox-close:hover { transform: rotate(90deg); }
+
+    /* ========== VIDEOS ========== */
+    .videos-section { max-width: 1000px; margin: 0 auto; }
+    .videos-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1.5rem; }
+    .video-card {
+      background: var(--bg-card); border-radius: var(--radius);
+      overflow: hidden; border: 1px solid var(--border);
+      box-shadow: var(--shadow); transition: all 0.4s;
+    }
+    .video-card:hover { box-shadow: var(--shadow-hover); transform: translateY(-3px); }
+    .video-card video { width: 100%; height: 200px; object-fit: contain; background: #f0ece7; }
+    .video-card .video-info { padding: 1rem 1.2rem; }
+    .video-card h3 {
+      font-family: var(--serif); font-size: 1rem; color: var(--text);
+      margin-bottom: 0.3rem;
+    }
+    .video-card p { font-size: 0.82rem; color: var(--text-muted); }
+
+    /* ========== FOOTER ========== */
+    footer {
+      text-align: center; padding: 3rem 2rem;
+      border-top: 1px solid var(--border); background: var(--bg-card);
+    }
+    footer .footer-name {
+      font-family: var(--serif); font-size: 1.3rem; font-weight: 700;
+      color: var(--text); margin-bottom: 0.3rem;
+    }
+    footer .footer-tagline {
+      font-size: 0.85rem; color: var(--accent); font-style: italic;
+      margin-bottom: 0.8rem;
+    }
+    footer .footer-copy { font-size: 0.75rem; color: var(--text-muted); }
+
+    /* ========== FADE IN ========== */
+    .fade-in { opacity: 0; transform: translateY(20px); transition: opacity 0.7s, transform 0.7s; }
+    .fade-in.visible { opacity: 1; transform: translateY(0); }
+
+    /* ========== RESPONSIVE ========== */
+    @media (max-width: 768px) {
+      nav { padding: 0.8rem 1.5rem; }
+      .nav-links { display: none; position: absolute; top: 100%; left: 0; width: 100%;
+        background: var(--bg-card); border-bottom: 1px solid var(--border);
+        flex-direction: column; padding: 1rem 1.5rem; gap: 1rem;
+      }
+      .nav-links.open { display: flex; }
+      .hamburger { display: flex; }
+
+      .hero { flex-direction: column; padding: 5rem 1.5rem 3rem; gap: 2rem; min-height: auto; }
+      .hero-text { text-align: center; }
+      .hero-text h1 { font-size: 2.2rem; }
+      .hero-text .desc { text-align: left; max-width: 100%; }
+      .hero-buttons { justify-content: center; }
+      .hero-card { width: 100%; }
+
+      section { padding: 3rem 1.5rem; }
+      .section-header h2 { font-size: 1.8rem; }
+
+      .timeline-card { width: 260px; }
+
+      .gallery-grid { columns: 2; }
+
+      .videos-grid { grid-template-columns: 1fr; }
+    }
+
+    @media (max-width: 480px) {
+      .gallery-grid { columns: 1; }
+      .timeline-card { width: 240px; }
+    }
+  </style>
+</head>
+<body>
+  <nav id="navbar">
+    <a href="#home" class="nav-logo">Yazhini</a>
+    <ul class="nav-links" id="navLinks"></ul>
+    <div class="hamburger" id="hamburger" onclick="document.getElementById('navLinks').classList.toggle('open')">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <main id="app"></main>
+  <footer id="footer"></footer>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+    <button class="lightbox-close">&times;</button>
+    <img id="lightbox-img" src="" alt="Enlarged" />
+  </div>
+
+  <script>
+    function handleImgError(img, context) {
+      img.style.display = 'none';
+    }
+
+    function openLightbox(src) {
+      const lb = document.getElementById('lightbox');
+      document.getElementById('lightbox-img').src = src;
+      lb.classList.add('active');
+    }
+    function closeLightbox() {
+      document.getElementById('lightbox').classList.remove('active');
+    }
+
+    fetch('portfolio-data.json')
+      .then(r => r.json())
+      .then(data => {
+        document.title = data.site.title;
+        renderNav(data.menu);
+        renderHero(data.hero);
+        renderTimeline(data.timeline);
+        renderGallery(data.gallery);
+        renderVideos(data.videos);
+        renderFooter(data.footer);
+        initObserver();
+        initNavScroll();
+      })
+      .catch(err => {
+        console.error('Failed to load portfolio data:', err);
+        document.getElementById('app').innerHTML = '<p style="text-align:center;padding:4rem;color:#999;">Failed to load data. Please check portfolio-data.json.</p>';
+      });
+
+    function renderNav(menu) {
+      const ul = document.getElementById('navLinks');
+      ul.innerHTML = menu.map(item =>
+        '<li><a href="' + item.href + '">' + item.label + '</a></li>'
+      ).join('');
+    }
+
+    function renderHero(hero) {
+      const app = document.getElementById('app');
+      const achieveHtml = hero.profileCard.achievements.map(a =>
+        '<span class="badge">' + a.text + '</span>'
+      ).join('');
+
+      const highlightsHtml = Object.entries(hero.profileCard.highlights).map(([key, vals]) =>
+        '<h4>' + key + '</h4>' + vals.map(v => '<span>' + v + '</span>').join('')
+      ).join('');
+
+      app.innerHTML += (
+        '<section class="hero" id="home">' +
+          '<div class="hero-text">' +
+            '<div class="subtitle">' + hero.subtitle + '</div>' +
+            '<h1>' + hero.name + '</h1>' +
+            '<p class="desc">' + hero.description + '</p>' +
+            '<div class="hero-buttons">' +
+              hero.buttons.map(b =>
+                '<a href="' + b.href + '" class="btn-' + b.style + '">' + b.text + '</a>'
+              ).join('') +
+            '</div>' +
+          '</div>' +
+          '<div class="hero-card">' +
+            '<img src="' + hero.profileCard.photo + '" alt="Profile" onerror="handleImgError(this,\'profile\')" />' +
+            '<div class="achievements">' + achieveHtml + '</div>' +
+            '<div class="highlights">' + highlightsHtml + '</div>' +
+          '</div>' +
+        '</section>'
+      );
+    }
+
+    function renderTimeline(timeline) {
+      const app = document.getElementById('app');
+      const cardsHtml = timeline.events.map((event, i) => {
+        const dateLabel = event.month ? event.month + ' ' + event.year : event.year;
+        const num = String(i + 1).padStart(2, '0');
+        const mediaHtml = event.video
+          ? '<video class="card-media" controls preload="metadata"><source src="' + event.video + '" type="video/mp4" /></video>'
+          : '<img class="card-media" src="' + event.image + '" alt="' + event.title + '" onerror="handleImgError(this,\'timeline\')" />';
+        const reflectionHtml = event.reflection
+          ? '<div class="card-reflection"><span class="card-reflection-label">Reflection</span>' + event.reflection + '</div>'
+          : '';
+        return (
+          '<div class="timeline-card">' +
+            '<span class="card-number">' + num + '</span>' +
+            '<div class="card-date">' + dateLabel + '</div>' +
+            '<span class="card-highlight">' + event.highlight + '</span>' +
+            '<h3>' + event.title + '</h3>' +
+            '<p class="card-desc">' + event.description + '</p>' +
+            reflectionHtml +
+            mediaHtml +
+            '<div class="timeline-dot"></div>' +
+          '</div>'
+        );
+      }).join('');
+
+      app.innerHTML += (
+        '<section class="timeline-section" id="timeline">' +
+          '<div class="section-header fade-in">' +
+            '<h2>' + timeline.sectionTitle + '</h2>' +
+            '<p>' + timeline.sectionSubtitle + '</p>' +
+            '<div class="section-divider"></div>' +
+          '</div>' +
+          '<div class="timeline-track-wrapper">' +
+            '<div class="timeline-track">' + cardsHtml + '</div>' +
+          '</div>' +
+          '<div class="timeline-scroll-hint">← Scroll to explore the journey →</div>' +
+        '</section>'
+      );
+    }
+
+    function renderGallery(gallery) {
+      const app = document.getElementById('app');
+      const categoriesHtml = gallery.categories.map(cat => {
+        const itemsHtml = cat.photos.map(photo => {
+          if (photo.video) {
+            return (
+              '<div class="gallery-item">' +
+                '<video controls preload="metadata"><source src="' + photo.video + '" type="video/mp4" /></video>' +
+                '<div class="gallery-overlay"><h4>' + photo.title + '</h4><p>' + photo.description + '</p></div>' +
+              '</div>'
+            );
+          }
+          return (
+            '<div class="gallery-item" onclick="openLightbox(\'' + photo.image + '\')">' +
+              '<img src="' + photo.image + '" alt="' + photo.title + '" onerror="handleImgError(this,\'gallery\')" />' +
+              '<div class="gallery-overlay"><h4>' + photo.title + '</h4><p>' + photo.description + '</p></div>' +
+            '</div>'
+          );
+        }).join('');
+        return (
+          '<div class="gallery-category fade-in">' +
+            '<div class="gallery-category-header">' +
+              '<h3>' + cat.title + '</h3>' +
+              '<p>' + cat.description + '</p>' +
+            '</div>' +
+            '<div class="gallery-grid">' + itemsHtml + '</div>' +
+          '</div>'
+        );
+      }).join('');
+
+      app.innerHTML += (
+        '<section class="gallery-section" id="gallery">' +
+          '<div class="section-header fade-in">' +
+            '<h2>' + gallery.sectionTitle + '</h2>' +
+            '<p>' + gallery.sectionSubtitle + '</p>' +
+            '<div class="section-divider"></div>' +
+          '</div>' +
+          categoriesHtml +
+        '</section>'
+      );
+    }
+
+    function renderVideos(videos) {
+      const app = document.getElementById('app');
+      const itemsHtml = videos.items.map(v =>
+        '<div class="video-card fade-in">' +
+          '<video controls preload="metadata"><source src="' + v.video + '" type="video/mp4" /></video>' +
+          '<div class="video-info"><h3>' + v.title + '</h3><p>' + v.description + '</p></div>' +
+        '</div>'
+      ).join('');
+
+      app.innerHTML += (
+        '<section class="videos-section" id="videos">' +
+          '<div class="section-header fade-in">' +
+            '<h2>' + videos.sectionTitle + '</h2>' +
+            '<p>' + videos.sectionSubtitle + '</p>' +
+            '<div class="section-divider"></div>' +
+          '</div>' +
+          '<div class="videos-grid">' + itemsHtml + '</div>' +
+        '</section>'
+      );
+    }
+
+    function renderFooter(footer) {
+      document.getElementById('footer').innerHTML = (
+        '<div class="footer-name">' + footer.name + '</div>' +
+        '<div class="footer-tagline">' + footer.tagline + '</div>' +
+        '<div class="footer-copy">© ' + new Date().getFullYear() + ' ' + footer.copyright + '</div>'
+      );
+    }
+
+    function initObserver() {
+      const obs = new IntersectionObserver((entries) => {
+        entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+      }, { threshold: 0.1 });
+      document.querySelectorAll('.fade-in').forEach(el => obs.observe(el));
+    }
+
+    function initNavScroll() {
+      const nav = document.getElementById('navbar');
+      window.addEventListener('scroll', () => {
+        nav.classList.toggle('scrolled', window.scrollY > 50);
+      });
+      // Active link highlighting
+      const sections = document.querySelectorAll('section[id]');
+      window.addEventListener('scroll', () => {
+        let current = '';
+        sections.forEach(s => {
+          if (window.scrollY >= s.offsetTop - 200) current = s.id;
+        });
+        document.querySelectorAll('.nav-links a').forEach(a => {
+          a.classList.toggle('active', a.getAttribute('href') === '#' + current);
+        });
+      });
+    }
+  </script>
+</body>
+</html>
