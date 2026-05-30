@@ -340,9 +340,48 @@
       .gallery-grid { columns: 1; }
       .timeline-card { width: 240px; }
     }
+
+    /* ========== THEME SWITCHER ========== */
+    .theme-switcher {
+      position: fixed; top: 1rem; right: 1rem; z-index: 1500;
+    }
+    .theme-switcher-btn {
+      width: 40px; height: 40px; border-radius: 50%; border: 1px solid var(--border);
+      background: rgba(250,248,245,0.9); backdrop-filter: blur(10px);
+      cursor: pointer; display: flex; align-items: center; justify-content: center;
+      font-size: 1.1rem; transition: all 0.3s; color: var(--text);
+    }
+    .theme-switcher-btn:hover { border-color: var(--accent); }
+    .theme-switcher-menu {
+      display: none; position: absolute; top: 48px; right: 0;
+      background: rgba(255,255,255,0.97); backdrop-filter: blur(20px);
+      border: 1px solid var(--border); border-radius: 12px;
+      padding: 0.5rem; min-width: 180px;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+    }
+    .theme-switcher-menu.open { display: block; }
+    .theme-switcher-menu a {
+      display: flex; align-items: center; gap: 0.6rem;
+      padding: 0.6rem 0.8rem; border-radius: 8px; text-decoration: none;
+      color: var(--text-muted); font-size: 0.82rem; font-weight: 500; transition: all 0.2s;
+    }
+    .theme-switcher-menu a:hover { background: rgba(196,149,106,0.08); color: var(--text); }
+    .theme-switcher-menu a.active { color: var(--text); background: rgba(196,149,106,0.15); }
+    .theme-switcher-menu a .ts-dot {
+      width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0;
+    }
+    .theme-switcher-menu a .ts-default {
+      font-size: 0.6rem; color: var(--accent-dark); margin-left: auto;
+    }
   </style>
 </head>
 <body>
+  <!-- Theme Switcher -->
+  <div class="theme-switcher" id="themeSwitcher">
+    <button class="theme-switcher-btn" onclick="toggleSwitcher()">&#127912;</button>
+    <div class="theme-switcher-menu" id="switcherMenu"></div>
+  </div>
+
   <nav id="navbar">
     <a href="#home" class="nav-logo">Yazhini</a>
     <ul class="nav-links" id="navLinks"></ul>
@@ -361,6 +400,47 @@
   </div>
 
   <script>
+    /* ========== THEME SWITCHING ========== */
+    var CURRENT_THEME = 'storybook';
+    var THEMES = [
+      { id: 'dark', name: 'Midnight', file: 'index.html', color: '#6366f1' },
+      { id: 'storybook', name: 'Storybook', file: 'theme-storybook.html', color: '#c4956a' },
+      { id: 'vivid', name: 'Vivid', file: 'theme-vivid.html', color: '#fd79a8' }
+    ];
+    (function() {
+      var saved = localStorage.getItem('preferredTheme');
+      if (saved && saved !== CURRENT_THEME) {
+        var t = THEMES.find(function(x) { return x.id === saved; });
+        if (t) { location.replace(t.file + location.hash); return; }
+      }
+    })();
+    function toggleSwitcher() {
+      document.getElementById('switcherMenu').classList.toggle('open');
+    }
+    document.addEventListener('click', function(e) {
+      if (!document.getElementById('themeSwitcher').contains(e.target)) {
+        document.getElementById('switcherMenu').classList.remove('open');
+      }
+    });
+    function switchTheme(themeId) {
+      localStorage.setItem('preferredTheme', themeId);
+      var t = THEMES.find(function(x) { return x.id === themeId; });
+      if (t && themeId !== CURRENT_THEME) {
+        location.href = t.file + location.hash;
+      }
+    }
+    function renderSwitcher(defaultThemeId) {
+      document.getElementById('switcherMenu').innerHTML = THEMES.map(function(t) {
+        var isActive = t.id === CURRENT_THEME;
+        var isDefault = t.id === defaultThemeId;
+        return '<a href="#" onclick="switchTheme(\'' + t.id + '\');return false;" class="' + (isActive ? 'active' : '') + '">' +
+          '<span class="ts-dot" style="background:' + t.color + '"></span>' +
+          t.name +
+          (isDefault ? '<span class="ts-default">default</span>' : '') +
+        '</a>';
+      }).join('');
+    }
+
     function handleImgError(img, context) {
       img.style.display = 'none';
     }
@@ -377,7 +457,13 @@
     fetch('portfolio-data.json')
       .then(r => r.json())
       .then(data => {
+        // Check JSON defaultTheme if no localStorage
+        if (!localStorage.getItem('preferredTheme') && data.site.defaultTheme && data.site.defaultTheme !== CURRENT_THEME) {
+          var t = THEMES.find(function(x) { return x.id === data.site.defaultTheme; });
+          if (t) { location.replace(t.file + location.hash); return; }
+        }
         document.title = data.site.title;
+        renderSwitcher(data.site.defaultTheme);
         renderNav(data.menu);
         renderHero(data.hero);
         renderTimeline(data.timeline);

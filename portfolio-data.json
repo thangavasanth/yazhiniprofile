@@ -2,7 +2,8 @@
   "site": {
     "title": "Yazhini Vasanth | Portfolio",
     "favicon": "images/favicon.png",
-    "theme": "dark"
+    "theme": "dark",
+    "defaultTheme": "dark"
   },
   "menu": [
     { "label": "Home", "href": "#home" },
