@@ -288,6 +288,7 @@
      
       {
         "title": "Childhood Memories",
+        "hidden": true,
         "description": "Precious moments from the early years of wonder and joy",
         "photos": [
           { "image": "images/childhood-1.jpg", "title": "First Day at School", "description": "The beginning of an amazing journey" },
@@ -298,6 +299,7 @@
       
       {
         "title": "Friends & Events",
+        "hidden": true,
         "description": "Cherished moments with friends and at special events",
         "photos": [
           { "image": "images/gallery/friends-1.jpg", "title": "Friendship Day", "description": "Celebrating with best friends" },

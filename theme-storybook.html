@@ -558,7 +558,7 @@
 
     function renderGallery(gallery) {
       const app = document.getElementById('app');
-      const categoriesHtml = gallery.categories.map(cat => {
+      const categoriesHtml = gallery.categories.filter(cat => !cat.hidden).map(cat => {
         const itemsHtml = cat.photos.map(photo => {
           if (photo.video) {
             return (

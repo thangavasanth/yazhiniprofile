@@ -662,7 +662,7 @@
 
     /* ========== RENDER GALLERY ========== */
     function renderGallery(gallery) {
-      const categoriesHtml = gallery.categories.map(cat => {
+      const categoriesHtml = gallery.categories.filter(cat => !cat.hidden).map(cat => {
         const photosHtml = cat.photos.map(photo => {
           if (photo.video) {
             return (

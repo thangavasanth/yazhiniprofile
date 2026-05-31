@@ -532,7 +532,7 @@
 
     function renderGallery(gallery) {
       var app = document.getElementById('app');
-      var categoriesHtml = gallery.categories.map(function(cat) {
+      var categoriesHtml = gallery.categories.filter(function(cat) { return !cat.hidden; }).map(function(cat) {
         var itemsHtml = cat.photos.map(function(photo) {
           if (photo.video) {
             return '<div class="gallery-item">' +
