@@ -9,7 +9,7 @@
     { "label": "Home", "href": "#home" },
     { "label": "Timeline", "href": "#timeline" },
     { "label": "Gallery", "href": "#gallery" },
-    { "label": "Videos", "href": "#videos" }
+    { "label": "Videos", "href": "#videos", "hidden": true }
   ],
   "hero": {
     "subtitle": "Welcome to My World",
@@ -310,6 +310,7 @@
     ]
   },
   "videos": {
+    "hidden": true,
     "sectionTitle": "Video Highlights",
     "sectionSubtitle": "Watch the moments that brought my journey to life",
     "items": [

@@ -574,7 +574,7 @@
         renderHero(data.hero);
         renderTimeline(data.timeline);
         renderGallery(data.gallery);
-        renderVideos(data.videos);
+        if (!data.videos.hidden) renderVideos(data.videos);
         renderFooter(data.footer);
         initAnimations();
         initLightbox();
@@ -590,7 +590,7 @@
     function renderNav(data) {
       document.getElementById('nav-logo').textContent = data.hero.name.split(' ')[0];
       const linksEl = document.getElementById('nav-links');
-      linksEl.innerHTML = data.menu.map(item =>
+      linksEl.innerHTML = data.menu.filter(item => !item.hidden).map(item =>
         '<li><a href="' + item.href + '">' + item.label + '</a></li>'
       ).join('');
     }

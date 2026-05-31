@@ -468,7 +468,7 @@
         renderHero(data.hero);
         renderTimeline(data.timeline);
         renderGallery(data.gallery);
-        renderVideos(data.videos);
+        if (!data.videos.hidden) renderVideos(data.videos);
         renderFooter(data.footer);
         initObserver();
         initNavScroll();
@@ -480,7 +480,7 @@
 
     function renderNav(menu) {
       const ul = document.getElementById('navLinks');
-      ul.innerHTML = menu.map(item =>
+      ul.innerHTML = menu.filter(item => !item.hidden).map(item =>
         '<li><a href="' + item.href + '">' + item.label + '</a></li>'
       ).join('');
     }

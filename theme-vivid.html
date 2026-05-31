@@ -430,7 +430,7 @@
         renderHero(data.hero);
         renderTimeline(data.timeline);
         renderGallery(data.gallery);
-        renderVideos(data.videos);
+        if (!data.videos.hidden) renderVideos(data.videos);
         renderFooter(data.footer);
         initObserver();
         initNavHighlight();
@@ -442,7 +442,7 @@
 
     function renderNav(menu) {
       var icons = { Home: '&#127968;', Timeline: '&#128340;', Gallery: '&#127748;', Videos: '&#127916;' };
-      document.getElementById('dockNav').innerHTML = menu.map(function(item) {
+      document.getElementById('dockNav').innerHTML = menu.filter(function(item) { return !item.hidden; }).map(function(item) {
         return '<a href="' + item.href + '"><span class="dock-icon">' + (icons[item.label] || '') + '</span>' + item.label + '</a>';
       }).join('');
     }
