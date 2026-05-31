@@ -320,16 +320,11 @@
       {
         "title": "Science Fair Presentation",
         "description": "Presenting the renewable energy project at the inter-school science fair",
-        "video": "videos/science-fair.mp4",
+        "video": "videos/Curiosity.mp4",
         "thumbnail": "images/video-thumbs/science.jpg"
-      },
-      
-      {
-        "title": "School Day Highlights",
-        "description": "A compilation of memorable moments from the school year",
-        "video": "videos/school-highlights.mp4",
-        "thumbnail": "images/video-thumbs/school.jpg"
       }
+      
+     
     ]
   },
   "footer": {
