@@ -280,9 +280,9 @@
         "title": "School Activities",
         "description": "Learning beyond the classroom through diverse activities",
         "photos": [
-          { "image": "images/gallery/school-1.jpg", "title": "Sports Day", "description": "Participating in the annual sports meet" },
-          { "image": "images/gallery/school-2.jpg", "title": "Library Time", "description": "Exploring new worlds through books" },
-          { "image": "images/gallery/school-3.jpg", "title": "Field Trip", "description": "Educational visit to the science museum" }
+          { "image": "images/school-1.jpg", "title": "Sports Day", "description": "Participating in the annual sports meet" },
+          { "image": "images/school-2.jpg", "title": "Library Time", "description": "Exploring new worlds through books" },
+          { "image": "images/school-3.jpg", "title": "Field Trip", "description": "Educational visit to the science museum" }
         ]
       },
      
@@ -290,9 +290,9 @@
         "title": "Childhood Memories",
         "description": "Precious moments from the early years of wonder and joy",
         "photos": [
-          { "image": "images/gallery/childhood-1.jpg", "title": "First Day at School", "description": "The beginning of an amazing journey" },
-          { "image": "images/gallery/childhood-2.jpg", "title": "Birthday Celebration", "description": "Celebrating with family and friends" },
-          { "image": "images/gallery/childhood-3.jpg", "title": "Garden Adventures", "description": "Exploring nature and the great outdoors" }
+          { "image": "images/childhood-1.jpg", "title": "First Day at School", "description": "The beginning of an amazing journey" },
+          { "image": "images/childhood-2.jpg", "title": "Birthday Celebration", "description": "Celebrating with family and friends" },
+          { "image": "images/childhood-3.jpg", "title": "Garden Adventures", "description": "Exploring nature and the great outdoors" }
         ]
       },
       
@@ -312,9 +312,9 @@
     "sectionSubtitle": "Watch the moments that brought my journey to life",
     "items": [
       {
-        "title": "Classical Dance Performance",
-        "description": "Bharatanatyam performance at the school Annual Day celebration",
-        "video": "videos/dance-performance.mp4",
+        "title": "Tamil Drama",
+        "description": ".",
+        "video": "videos/Tamil_Drama.mp4",
         "thumbnail": "images/video-thumbs/dance.jpg"
       },
       {
