@@ -1,0 +1,338 @@
+{
+  "site": {
+    "title": "Yazhini Vasanth | Portfolio",
+    "favicon": "images/favicon.png",
+    "theme": "dark",
+    "defaultTheme": "dark"
+  },
+  "menu": [
+    { "label": "Home", "href": "#home" },
+    { "label": "Timeline", "href": "#timeline" },
+    { "label": "Gallery", "href": "#gallery" },
+    { "label": "Videos", "href": "#videos", "hidden": true }
+  ],
+  "hero": {
+    "subtitle": "Welcome to My World",
+    "name": "Yazhini Vasanth",
+    "description": "Driven by curiosity, I enjoy learning, exploring new ideas, and expressing creativity. I value leadership, collaboration, and using my experiences to grow while contributing positively to those around me. <br> <br>I am particularly interested in understanding how things work and applying what I learn in meaningful ways. Through academics, leadership roles, and creative pursuits, I continue to develop a balanced perspective that values both growth and contribution.",
+    "buttons": [
+      { "text": "View Journey", "href": "#timeline", "style": "primary" },
+      { "text": "Explore Gallery", "href": "#gallery", "style": "secondary" }
+    ],
+    "profileCard": {
+      "photo": "images/profile.jpg",
+      "achievements": [
+        { "icon": "trophy", "text": "Singapore Astronomy Olympiad – Bronze Award" },
+        { "icon": "star", "text": "Hall of Fame Recognition" },
+        { "icon": "medal", "text": "Vice President – Environment Club" }
+      ],
+      "highlights": {
+        "leadership": ["School Prefect", "Team Captain", "Event Organizer"],
+        "stem": ["Science Fair Winner", "Math Olympiad", "Robotics Club"]
+      }
+    }
+  },
+  "timeline": {
+    "sectionTitle": "My Journey",
+    "sectionSubtitle": "A timeline of milestones, achievements, and memorable moments",
+    "events": [
+      {
+        "year": "2026",
+        "month": "May",
+        "title": "Singapore Astronomy Olympiad",
+        "highlight": "Bronze Award • Hall of Fame Recognition",
+        "description": "Awarded Bronze in the Singapore Astronomy Olympiad and recognized in the Hall of Fame for outstanding performance in a national-level astronomy competition. Demonstrated strong passion, curiosity, and capability in astronomy, STEM learning, and scientific exploration.",
+        "reflection": "This competition deepened my understanding of astrophysics and celestial mechanics. I learned the value of self-directed study, tackling challenging problems under pressure, and the thrill of representing my school on a national stage.",
+        "image": "images/timeline/Olympiad.jpg"
+      },
+      {
+        "year": "2026",
+        "month": "March",
+        "title": "Media Challange",
+        "highlight": "Best Content Assets Prize",
+        "description": "Part of Team Chimichanga which won the Best Content Assets Prize at The Media Challenge 2026 representing Cedar Girls",
+        "reflection": "Working as a team taught me the power of collaboration, creative storytelling, and how to communicate ideas effectively through media. I discovered my passion for content creation and visual communication.",
+        "image": "images/timeline/mediachallenge.jpg"
+      },
+      {
+        "year": "2025",
+        "month": "November",
+        "title": "Vice President - Environment Club",
+        "highlight": "Leadership & Environmental Initiatives",
+        "description": "Appointed as Vice President of the Environment Club in Cedar Girls’ Secondary School. Demonstrated leadership, teamwork, responsibility, and active participation in environmental awareness programs, sustainability initiatives, school events, and student engagement activities.",
+        "reflection": "Leading the Environment Club taught me how to inspire others toward a shared cause. I grew as a leader by learning to plan events, delegate responsibilities, and drive meaningful change in our school community.",
+        "image": "images/timeline/evc_VP.jpg"
+      },
+      {
+        "year": "2025",
+        "month": "March",
+        "title": "SDG Hackathon Participation",
+        "highlight": "Cross Curricular Exchange Prog.",
+        "description": "Participated in a collaborative hackathon focused on the United Nations Sustainable Development Goals (SDGs), contributing ideas and solutions addressing real-world issues with an emphasis on impact, feasibility, and innovation. This was part of the Hong Kong University Graduate Association College (HKU) – Cedar – Dunman High School Cross Curricular Exchange Programme.",
+        "reflection": "This experience helped me understand how real-world problems can be approached through teamwork and structured thinking. It strengthened my ability to analyse challenges, contribute ideas, and communicate solutions effectively.",
+        "image": "images/timeline/SDG_Hackathon.jpg"
+      },
+      {
+        "year": "2024",
+        "month": "June",
+        "title": "English Literature",
+        "highlight": "The Teenage Paradox",
+        "description": "A reflective piece capturing the emotional complexity of adolescence, balancing individuality with the need for acceptance while navigating growth and uncertainty.",
+        "reflection": "Writing this poem helped me understand the contradictions of growing up, especially the struggle between being myself and fitting in. It showed me that confusion is part of growth and that discovering my identity takes time.",
+        "video": "videos/poem_1.mp4"
+      },
+      {
+        "year": "2024",
+        "month": "August",
+        "title": "Bow Seat: Ocean Awareness Contest",
+        "highlight": "Creative",
+        "description": "Received the Special Mention Award and cash recognition in the Ocean Awareness Contest for producing an impactful short film focused on ocean conservation, marine sustainability, and environmental awareness. The project demonstrated creativity, storytelling, and strong advocacy for protecting marine ecosystems.",
+        "reflection": "This project taught me how art and storytelling can be powerful tools for advocacy. I learned video production skills and gained a deeper appreciation for ocean conservation and our responsibility toward the environment.",
+        "image": "images/timeline/oceanawarenesscontest.jpg"
+      },
+      {
+        "year": "2022",
+        "month": "May",
+        "title": "Academic Excellence",
+        "highlight": "Recognised for outstanding performance in PSLE",
+        "description": "Awarded the Mind Stretcher Achievement Award in recognition of excellent results in the 2022 PSLE, reflecting strong academic performance and consistent dedication to learning.",
+        "reflection": "This recognition reinforced the importance of discipline and consistent effort in my studies, and motivated me to continue striving for excellence in my academic journey.",
+        "image": "images/timeline/PSLE-MS-Award.jpg"
+      },
+      {
+        "year": "2022",
+        "month": "July",
+        "title": "Singapore Youth Festival (SYF) – Choir Participation",
+        "highlight": "Participation in national-level performing arts event",
+        "description": "Participated in the Singapore Youth Festival 2022 Arts Presentation (Choir), contributing to a team-based performance at a national-level platform that celebrates artistic excellence.",
+        "reflection": "This experience helped me build confidence, discipline, and teamwork through music. It also strengthened my appreciation for collaboration and performing as part of a group.",
+        "image": "images/timeline/SYF_Choir.jpg"
+      },
+      {
+        "year": "2022",
+        "month": "July",
+        "title": "Growth Mindset Award",
+        "highlight": "Recognised for positive attitude and perseverance",
+        "description": "Awarded by Punggol Primary School in recognition of a positive attitude and continued effort in embracing challenges, demonstrating resilience and a willingness to learn.",
+        "reflection": "This recognition encouraged me to approach challenges with a positive mindset and to see mistakes as opportunities for growth and improvement.",
+        "image": "images/timeline/Growth_Mindset_Award.jpg"
+      },
+      {
+        "year": "2022",
+        "month": "July",
+        "title": "Learning Excellence Award",
+        "highlight": "Recognised for exemplary learning attitude",
+        "description": "Awarded by Punggol Primary School in recognition of an exemplary learning disposition, demonstrating strong commitment, curiosity, and consistency in academic engagement.",
+        "reflection": "This recognition encouraged me to stay consistent in my learning and to approach every subject with curiosity and a willingness to improve.",
+        "image": "images/timeline/Learning_Excellence_Award.jpg"
+      },
+      {
+        "year": "2022",
+        "month": "July",
+        "title": "Innovative Teamplayer Award",
+        "highlight": "Recognised for contribution and teamwork in choir",
+        "description": "Awarded by Punggol Primary School in recognition of outstanding contribution towards team achievement in choir, demonstrating collaboration, initiative, and active participation.",
+        "reflection": "This experience taught me the importance of teamwork and contributing meaningfully to group success, while also valuing different ideas and working together towards a common goal.",
+        "image": "images/timeline/Innovative_Teamplayer_Award.jpg"
+      },
+      {
+        "year": "2022",
+        "month": "August",
+        "title": "Award of Excellence – Mother Tongue Language",
+        "highlight": "Recognised for excellence in mother tongue language and cultural understanding",
+        "description": "Awarded for excellent performance in Mother Tongue Language, demonstrating strong language proficiency and appreciation of cultural knowledge.",
+        "reflection": "This recognition strengthened my confidence in expressing myself in my mother tongue and deepened my appreciation for language and cultural heritage.",
+        "image": "images/timeline/Mother_Tongue_Award.jpg"
+      },
+      {
+        "year": "2021",
+        "month": "November",
+        "title": "Social Studies Champ",
+        "highlight": "Recognised for excellence in Social Studies",
+        "description": "Awarded by Punggol Primary School in recognition of talent, passion, and strong interest in Social Studies, demonstrating consistent academic excellence in the subject.",
+        "reflection": "This achievement strengthened my interest in understanding society and global perspectives, and encouraged me to continue learning with curiosity and critical thinking.",
+        "image": "images/timeline/Social_Studies_Champ.jpg"
+      },
+      {
+        "year": "2022",
+        "month": "November",
+        "title": "Music Champ",
+        "highlight": "Recognised for excellence in Music",
+        "description": "Awarded by Punggol Primary School in recognition of talent, passion, and strong interest in Music, demonstrating consistent performance and dedication in the subject.",
+        "reflection": "This achievement strengthened my confidence in music and encouraged me to continue developing my skills with passion and discipline.",
+        "image": "images/timeline/Music_Champ.jpg"
+      },
+      {
+      "year": "2021",
+      "month": "November",
+      "title": "S.T.A.R. Pupil Award",
+      "highlight": "Recognised for demonstrating values of affection and care",
+      "description": "Awarded by Punggol Primary School for consistently exhibiting the value of affection, reflecting kindness, empathy, and positive relationships with peers.",
+      "reflection": "This recognition reminded me of the importance of kindness and empathy in everyday interactions, and encouraged me to be more mindful and supportive towards others.",
+      "image": "images/timeline/STAR_Pupil_Award.jpg"
+    },
+    {
+      "year": "2020",
+      "month": "November",
+      "title": "Carnatic Vocal Music Certification – Year 4",
+      "highlight": "Achieved Distinction in Carnatic Vocal Music",
+      "description": "Successfully completed Year 4 in Carnatic Vocal Music with Distinction under the guidance of Guru Smt. Mythili Rajaraman, demonstrating strong musical ability, discipline, and dedication to classical arts.",
+      "reflection": "This achievement strengthened my foundation in classical music and taught me the importance of consistent practice, patience, and dedication in mastering a skill.",
+      "image": "images/timeline/Carnatic_Vocal_Year4.jpg"
+    },
+    {
+      "year": "2020",
+      "month": "September",
+      "title": "Responsibility Award – Egg Baby Parenting Programme",
+      "highlight": "Recognised for demonstrating responsibility and care",
+      "description": "Awarded by Punggol Primary School for displaying the value of responsibility during the P4 CCE Egg Baby Parenting Programme, showing care, commitment, and accountability in completing the activity.",
+      "reflection": "This experience taught me the importance of responsibility and consistency in caring for something entrusted to me, and helped me understand the value of accountability in everyday actions.",
+      "image": "images/timeline/Egg_Baby_Parenting_Award.jpg"
+    },
+    {
+      "year": "2020",
+      "month": "November",
+      "title": "Science Champ",
+      "highlight": "Recognised for excellence in Science",
+      "description": "Awarded by Punggol Primary School in recognition of talent, passion, and strong interest in Science, demonstrating curiosity and consistent academic excellence in the subject.",
+      "reflection": "This achievement strengthened my curiosity about how things work and encouraged me to explore science with greater interest and enthusiasm.",
+      "image": "images/timeline/Science_Champ.jpg"
+    },
+    {
+      "year": "2019",
+      "month": "August",
+      "title": "Carnatic Vocal Music Certification – Year 3",
+      "highlight": "Achieved Distinction in Carnatic Vocal Music",
+      "description": "Successfully completed Year 3 in Carnatic Vocal Music with Distinction under the guidance of Guru Smt. Mythili Rajaraman, demonstrating strong foundational skills and dedication to classical music.",
+      "reflection": "This stage of learning helped me strengthen my fundamentals in music and taught me the value of consistent practice and discipline in improving my skills.",
+      "image": "images/timeline/Carnatic_Vocal_Year3.jpg"
+    },
+    {
+      "year": "2019",
+      "month": "April",
+      "title": "Conversational Mandarin Course (Beginner)",
+      "highlight": "Completed beginner-level Mandarin communication course",
+      "description": "Participated in a Conversational Mandarin (Beginner) course conducted at Punggol Primary School, developing basic language skills and confidence in everyday communication.",
+      "reflection": "This experience introduced me to a new language and helped me build confidence in speaking and understanding Mandarin, encouraging me to continue exploring different languages.",
+      "image": "images/timeline/Mandarin_Course.jpg"
+    },
+    {
+      "year": "2019",
+      "month": "November",
+      "title": "Top in Class",
+      "highlight": "Achieved top academic performance in class",
+      "description": "Awarded by Punggol Primary School for achieving top position in class, demonstrating outstanding academic performance and a strong learning disposition.",
+      "reflection": "This achievement motivated me to stay consistent in my studies and reinforced the importance of discipline and effort in achieving academic goals.",
+      "image": "images/timeline/Top_in_Class.jpg"
+    },
+    {
+      "year": "2018",
+      "month": "August",
+      "title": "Carnatic Vocal Music Certification – Year 2",
+      "highlight": "Achieved Distinction in Carnatic Vocal Music",
+      "description": "Successfully completed Year 2 in Carnatic Vocal Music with Distinction under the guidance of Guru Smt. Mythili Rajaraman, demonstrating steady progress and commitment to classical music training.",
+      "reflection": "This stage of learning helped me build stronger fundamentals in music and reinforced the importance of consistent practice and patience in developing my skills.",
+      "image": "images/timeline/Carnatic_Vocal_Year2.jpg"
+    },
+    {
+      "year": "2016",
+      "month": "October",
+      "title": "Community Dance Performance – Singapore Book of Records Event",
+      "highlight": "Participated in record-setting community event performance",
+      "description": "Participated in a community dance performance at Gardens by the Bay as part of the Singapore Book of Records event ‘Largest Collage Made of Marbles’, contributing to a large-scale collaborative achievement.",
+      "reflection": "This experience introduced me to performing in a large community event and taught me the importance of teamwork, coordination, and being part of something bigger than myself.",
+      "image": "images/timeline/Community_Dance_2016.jpg"
+    }
+    ]
+  },
+  "gallery": {
+    "sectionTitle": "Photo Gallery",
+    "sectionSubtitle": "Capturing moments that tell my story",
+    "categories": [
+      {
+        "title": "Arts & Cultural",
+        "description": "Celebrating heritage through dance, music, and cultural festivities",
+        "photos": [
+          { "image": "images/gallery/traditional-1.jpg", "title": "Karantic Music", "description": "." },
+          { "image": "images/gallery/traditional-2.jpg", "title": "Choir at SOTA", "description": "." },
+          { "image": "images/gallery/traditional-3.jpg", "title": "Violin", "description": "." },
+          { "image": "images/gallery/traditional-4.jpg", "title": "Piono", "description": "." }
+        
+        ]
+      },
+      
+      {
+        "title": "STEM & Science",
+        "description": "Exploring the wonders of science, technology, and innovation",
+        "photos": [
+          { "image": "images/gallery/science_4.jpg", "title": "My Room & My lab", "description": "." },
+          { "image": "images/gallery/science_6.JPG", "title": "Biology", "description": "." },
+          { "image": "images/gallery/science_9.jpg", "title": "Physics", "description": "." },
+          { "image": "images/gallery/science_2.jpg", "title": "Chemistry", "description": "." },
+          { "image": "images/gallery/science_3.jpg", "title": "Boat from Recycle matrials", "description": "." },
+          { "image": "images/gallery/science_8.jpg", "title": "Electric Circuit", "description": "." },
+          {"video": "videos/science_1.mp4", "title": "Combustion energy into electricity", "description": "."},
+        { "image": "images/gallery/science_10.jpg", "title": "Starhazing", "description": "." }
+ 
+        ]
+      },
+      {
+        "title": "School Activities",
+        "description": "Learning beyond the classroom through diverse activities",
+        "photos": [
+          { "image": "images/school-1.jpg", "title": "Sports Day", "description": "Participating in the annual sports meet" },
+          { "image": "images/school-2.jpg", "title": "Library Time", "description": "Exploring new worlds through books" },
+          { "image": "images/school-3.jpg", "title": "Field Trip", "description": "Educational visit to the science museum" }
+        ]
+      },
+     
+      {
+        "title": "Childhood Memories",
+        "hidden": true,
+        "description": "Precious moments from the early years of wonder and joy",
+        "photos": [
+          { "image": "images/childhood-1.jpg", "title": "First Day at School", "description": "The beginning of an amazing journey" },
+          { "image": "images/childhood-2.jpg", "title": "Birthday Celebration", "description": "Celebrating with family and friends" },
+          { "image": "images/childhood-3.jpg", "title": "Garden Adventures", "description": "Exploring nature and the great outdoors" }
+        ]
+      },
+      
+      {
+        "title": "Friends & Events",
+        "hidden": true,
+        "description": "Cherished moments with friends and at special events",
+        "photos": [
+          { "image": "images/gallery/friends-1.jpg", "title": "Friendship Day", "description": "Celebrating with best friends" },
+          { "image": "images/gallery/friends-2.jpg", "title": "School Picnic", "description": "Fun times at the annual school picnic" },
+          { "image": "images/gallery/friends-3.jpg", "title": "Farewell Party", "description": "Memorable farewell celebration" }
+        ]
+      }
+    ]
+  },
+  "videos": {
+    "hidden": true,
+    "sectionTitle": "Video Highlights",
+    "sectionSubtitle": "Watch the moments that brought my journey to life",
+    "items": [
+      {
+        "title": "Tamil Drama",
+        "description": ".",
+        "video": "videos/Tamil_Drama.mp4",
+        "thumbnail": "images/video-thumbs/dance.jpg"
+      },
+      {
+        "title": "Science Fair Presentation",
+        "description": "Presenting the renewable energy project at the inter-school science fair",
+        "video": "videos/Curiosity.mp4",
+        "thumbnail": "images/video-thumbs/science.jpg"
+      }
+      
+     
+    ]
+  },
+  "footer": {
+    "name": "Yazhini Vasanth",
+    "tagline": "Dream. Learn. Achieve. Inspire.",
+    "copyright": "Yazhini Vasanth. All rights reserved."
+  }
+}
